@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
@@ -51,7 +51,7 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 600;
     line-height: 1.3;
 }
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: var(--transition);
     cursor: pointer;
     border: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .btn-primary {
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .logo-icon {
@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     height: 100vh;
     min-height: 600px;
-    background: url('https://images.unsplash.com/photo-1558905540-212907094e8f?w=1920&h=1080&fit=crop') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1920&h=1080&fit=crop') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,6 +250,11 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: 10px;
     animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+.scroll-indicator:hover {
+    opacity: 0.8;
 }
 
 .scroll-indicator span {
@@ -369,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--primary-color);
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .experience-badge .text {
@@ -499,7 +504,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     cursor: pointer;
     transition: var(--transition);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .filter-btn:hover,
@@ -667,7 +672,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.1rem;
     color: var(--primary-color);
     margin-bottom: 0.3rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .contact-item p {
@@ -719,7 +724,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px 20px;
     border: 2px solid #e9ecef;
     border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     transition: var(--transition);
     background: var(--off-white);
@@ -798,7 +803,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 15px;
     border: none;
     border-radius: 50px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .newsletter-form .btn {

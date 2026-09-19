@@ -1,9 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenThumb - Your Gardening Journey Starts Here</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <span class="logo-text">GreenThumb</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Grow Your Dream Garden</h1>
+            <p class="fade-in-delay">Discover the joy of gardening with expert tips, beautiful plants, and a community of green enthusiasts.</p>
+            <div class="hero-buttons fade-in-delay-2">
+                <a href="#services" class="btn btn-primary">Get Started</a>
+                <a href="#gallery" class="btn btn-secondary">View Gallery</a>
+            </div>
+        </div>
+        <div class="scroll-indicator"><span>Scroll Down</span><div class="scroll-arrow"></div></div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="image-card image-1"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=400&fit=crop" alt="Garden"></div>
+                    <div class="image-card image-2"><img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=600&h=400&fit=crop" alt="Tools"></div>
+                    <div class="experience-badge"><span class="number">15+</span><span class="text">Years Experience</span></div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">About Our Garden</h2>
+                    <p class="lead">We believe everyone has the potential to create a beautiful, thriving garden.</p>
+                    <p>Whether you are a beginner or experienced gardener, GreenThumb is here to guide you every step of the way.</p>
+                    <ul class="features-list">
+                        <li><span class="feature-icon">🌱</span><div><h4>Expert Guidance</h4><p>Professional tips from certified horticulturists</p></div></li>
+                        <li><span class="feature-icon">💧</span><div><h4>Sustainable Practices</h4><p>Eco-friendly gardening methods for a greener future</p></div></li>
+                        <li><span class="feature-icon">🌸</span><div><h4>Premium Plants</h4><p>Curated selection of healthy, vibrant plants</p></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header"><h2 class="section-title">Our Services</h2><p class="section-subtitle">Everything you need to create your perfect garden</p></div>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon">🌿</div><h3>Garden Planning</h3><p>Custom garden designs tailored to your space and climate.</p><a href="#" class="service-link">Learn More →</a></div>
+                <div class="service-card"><div class="service-icon">🪴</div><h3>Plant Consultation</h3><p>Expert advice on plant selection and care requirements.</p><a href="#" class="service-link">Learn More →</a></div>
+                <div class="service-card"><div class="service-icon">🔧</div><h3>Maintenance Services</h3><p>Regular garden maintenance including pruning and weeding.</p><a href="#" class="service-link">Learn More →</a></div>
+                <div class="service-card"><div class="service-icon">📚</div><h3>Workshops & Classes</h3><p>Hands-on learning experiences for all skill levels.</p><a href="#" class="service-link">Learn More →</a></div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header"><h2 class="section-title">Garden Gallery</h2><p class="section-subtitle">Explore stunning gardens created by our community</p></div>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="flowers">Flowers</button>
+                <button class="filter-btn" data-filter="vegetables">Vegetables</button>
+                <button class="filter-btn" data-filter="indoor">Indoor</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="flowers"><img src="https://images.unsplash.com/photo-1490750967868-58cb75069ed6?w=600&h=400&fit=crop" alt="Flowers"><div class="gallery-overlay"><h4>Vibrant Flower Beds</h4><p>Seasonal blooms</p></div></div>
+                <div class="gallery-item" data-category="vegetables"><img src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e10?w=600&h=400&fit=crop" alt="Vegetables"><div class="gallery-overlay"><h4>Organic Vegetables</h4><p>Fresh from garden</p></div></div>
+                <div class="gallery-item" data-category="indoor"><img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&h=400&fit=crop" alt="Indoor"><div class="gallery-overlay"><h4>Indoor Paradise</h4><p>House plants collection</p></div></div>
+                <div class="gallery-item" data-category="flowers"><img src="https://images.unsplash.com/photo-1525498128493-380d1990a112?w=600&h=400&fit=crop" alt="Roses"><div class="gallery-overlay"><h4>Rose Garden</h4><p>Classic beauty</p></div></div>
+                <div class="gallery-item" data-category="vegetables"><img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=600&h=400&fit=crop" alt="Herbs"><div class="gallery-overlay"><h4>Herb Garden</h4><p>Culinary delights</p></div></div>
+                <div class="gallery-item" data-category="indoor"><img src="https://images.unsplash.com/photo-1545241047-6083a3684587?w=600&h=400&fit=crop" alt="Succulents"><div class="gallery-overlay"><h4>Succulent Display</h4><p>Low maintenance beauty</p></div></div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header"><h2 class="section-title">What Gardeners Say</h2><p class="section-subtitle">Real stories from our happy community members</p></div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card"><div class="testimonial-content"><div class="stars">★★★★★</div><p>"GreenThumb transformed my tiny balcony into a lush urban oasis!"</p></div><div class="testimonial-author"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Sarah"><div><h4>Sarah Mitchell</h4><span>Urban Gardener</span></div></div></div>
+                <div class="testimonial-card"><div class="testimonial-content"><div class="stars">★★★★★</div><p>"The workshops gave me confidence to start my own vegetable garden."</p></div><div class="testimonial-author"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="James"><div><h4>James Rodriguez</h4><span>Homeowner</span></div></div></div>
+                <div class="testimonial-card"><div class="testimonial-content"><div class="stars">★★★★★</div><p>"The maintenance service keeps my garden pristine year-round!"</p></div><div class="testimonial-author"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Emily"><div><h4>Emily Chen</h4><span>Garden Enthusiast</span></div></div></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p>Ready to start your gardening journey? We would love to hear from you!</p>
+                    <div class="contact-details">
+                        <div class="contact-item"><span class="contact-icon">📍</span><div><h4>Visit Us</h4><p>123 Garden Lane, Green Valley, CA 90210</p></div></div>
+                        <div class="contact-item"><span class="contact-icon">📞</span><div><h4>Call Us</h4><p>(555) 123-4567</p></div></div>
+                        <div class="contact-item"><span class="contact-icon">✉️</span><div><h4>Email Us</h4><p>hello@greenthumb.com</p></div></div>
+                        <div class="contact-item"><span class="contact-icon">🕐</span><div><h4>Working Hours</h4><p>Mon-Sat: 9AM - 6PM</p></div></div>
+                    </div>
+                    <div class="social-links"><a href="#" class="social-link">📘</a><a href="#" class="social-link">📷</a><a href="#" class="social-link">🐦</a><a href="#" class="social-link">📌</a></div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group"><input type="text" id="name" name="name" placeholder="Your Name" required></div>
+                        <div class="form-group"><input type="email" id="email" name="email" placeholder="Your Email" required></div>
+                        <div class="form-group"><select id="subject" name="subject" required><option value="" disabled selected>Select Subject</option><option value="consultation">Garden Consultation</option><option value="maintenance">Maintenance Services</option><option value="workshop">Workshops</option><option value="other">Other</option></select></div>
+                        <div class="form-group"><textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about"><div class="logo"><span class="logo-icon">🌿</span><span class="logo-text">GreenThumb</span></div><p>Helping gardens flourish since 2009.</p></div>
+                <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li></ul></div>
+                <div class="footer-links"><h4>Services</h4><ul><li><a href="#">Planning</a></li><li><a href="#">Consultation</a></li><li><a href="#">Maintenance</a></li><li><a href="#">Workshops</a></li></ul></div>
+                <div class="footer-newsletter"><h4>Newsletter</h4><p>Subscribe for gardening tips</p><form class="newsletter-form"><input type="email" placeholder="Your email" required><button type="submit" class="btn btn-primary">Subscribe</button></form></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 GreenThumb. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>

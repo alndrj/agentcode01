@@ -115,9 +115,9 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    box-shadow: var(--shadow);
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
     padding: 1rem 0;
     transition: var(--transition);
 }
@@ -744,7 +744,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
-    background: var(--text-dark);
+    background: linear-gradient(rgba(27, 67, 50, 0.9), rgba(27, 67, 50, 0.9)), url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=1920&h=800&fit=crop') center/cover no-repeat;
     color: var(--white);
     padding: 60px 0 30px;
 }

@@ -118,8 +118,15 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
     backdrop-filter: none;
     box-shadow: none;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     transition: var(--transition);
+}
+
+.navbar.scrolled {
+    background: rgba(45, 106, 79, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .container {
@@ -149,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-links a {
     font-weight: 500;
-    color: var(--text-dark);
+    color: var(--white);
     transition: var(--transition);
     position: relative;
 }
@@ -171,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-links a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .mobile-menu-btn {
@@ -940,4 +947,38 @@ h1, h2, h3, h4, h5, h6 {
     .experience-badge .number {
         font-size: 2rem;
     }
+}
+
+/* Move to Top Button */
+.move-to-top {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(45, 106, 79, 0.4);
+    border: none;
+    font-size: 1.2rem;
+}
+
+.move-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.move-to-top:hover {
+    background: var(--secondary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(45, 106, 79, 0.5);
 }

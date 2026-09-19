@@ -38,10 +38,11 @@ const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
+    // Add/remove scrolled class for background change
     if (currentScroll > 100) {
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+        navbar.classList.remove('scrolled');
     }
     
     lastScroll = currentScroll;
@@ -250,6 +251,27 @@ function autoScrollTestimonials() {
 // Add loaded class to body when page is fully loaded
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
+});
+
+// Move to Top Button
+const moveToTopBtn = document.createElement('button');
+moveToTopBtn.className = 'move-to-top';
+moveToTopBtn.innerHTML = '↑';
+document.body.appendChild(moveToTopBtn);
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        moveToTopBtn.classList.add('visible');
+    } else {
+        moveToTopBtn.classList.remove('visible');
+    }
+});
+
+moveToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
 
 // Service cards hover effect enhancement
